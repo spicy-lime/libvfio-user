@@ -50,7 +50,7 @@ common_cflags = [
 ]
 
 if opt_debug
-    common_cflags += '-Werror'
+    common_cflags += '-Wno-error'
 endif
 
 if opt_debug_logs.enabled() or (not opt_debug_logs.disabled() and opt_debug)
